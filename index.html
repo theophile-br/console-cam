@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Display Webcam Stream</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="terminal">
+      <div id="termMenu">
+        <div class="termButtons termClose"></div>
+        <div class="termButtons termMinimize"></div>
+        <div class="termButtons termZoom"></div>
+        <div class="termTitle">Terminal</div>
+      </div>
+      <div id="termScreen">
+        <p id="waiting" class="line">$ <span class="cursor4">|</span></p>
+        <p id="cmd" class="line">
+          $ ./consoleCam<span class="cursor4">|</span>
+        </p>
+        <canvas id="canvasOutput" width="640" height="480"></canvas>
+      </div>
+    </div>
+    <video autoplay="true" id="videoInput"></video>
+    <canvas id="canvasInput" width="640" height="480"></canvas>
+  </body>
+  <script src="lib/opencv.js"></script>
+  <script src="js/main.js"></script>
+</html>

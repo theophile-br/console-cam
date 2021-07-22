@@ -1,0 +1,203 @@
+
+body {
+    background-color: #272727;
+    padding: 10px;
+    font-family: monospace;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #terminal{
+    font-size: 1.25em;
+    white-space: normal;
+  } 
+
+  #canvasInput {
+      position: absolute;
+      left: -9000px;
+}
+
+#videoInput{
+    position: absolute;
+    left: -9000px;
+}
+   
+  #termMenu {
+    box-sizing: border-box;
+    height: 25px;
+    background-color: #bbb;
+    margin: 0 auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  .termButtons {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    display: inline-block;
+  }
+
+  .termClose {
+    background-color: #ff3b47;
+    border-color: #9d252b;
+  }
+  
+  .termMinimize {
+    left: 11px;
+    background-color: #ffc100;
+    border-color: #9d802c;
+  }
+  
+  .termZoom {
+    left: 16px;
+    background-color: #00d742;
+    border-color: #049931;
+  }
+
+  .termTitle {
+    position: relative;
+    text-align: center;
+    top: -13px;
+  }
+  
+  #termScreen {
+    width: 100%;
+    background-color: #151515;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .cursor4 {
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    -o-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+  }
+
+  #cmd {
+      display: none;
+  }
+
+  .line {
+    position: relative;
+    margin-left: 1em;
+    text-align: left;
+    font-size: 1.25em;
+    white-space: normal;
+    color: #fff;
+    width: 0;
+    display: inline-block;
+    font-size: 1em;
+    overflow: hidden;
+    word-break:keep-all;
+    -webkit-animation: type .5s steps(20, end) forwards;
+    -moz-animation: type .5s steps(20, end) forwards;
+    -o-animation: type .5s steps(20, end) forwards;
+    animation: type .5s steps(20, end) forwards;
+  }
+
+
+@-webkit-keyframes type {
+    to {
+      width: 17em;
+    }
+  }
+  
+  @-moz-keyframes type {
+    to {
+      width: 17em;
+    }
+  }
+  
+  @-o-keyframes type {
+    to {
+      width: 17em;
+    }
+  }
+  
+  @keyframes type {
+    to {
+      width: 17em;
+    }
+  }
+
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @-o-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
