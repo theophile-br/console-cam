@@ -9,10 +9,8 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^2.27.4"
-  },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "browser-sync": "^2.27.4"
   }
 }
